@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+/*ADDITIONAL FONTS HERE ---->*/
 
 *{
     padding: 0;
@@ -23,13 +24,16 @@ body{
   width: 100%;
   height: 100vh;
   overflow: auto;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 }
 
 
 /*NAVBAR*/
 nav{
     position: static;
-    background: linear-gradient(black,#101010);
+    background: linear-gradient(black,black);
     top: 0;
     width: 100%;
     height: 8%;
@@ -108,7 +112,7 @@ nav ul li a.anitext:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url(img/melachonic-fieldpaths.jpg);
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/chair-in-wheatfield.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -155,7 +159,7 @@ nav ul li a.anitext:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(#0f2027, #203a43, #2c5364);
+    background: linear-gradient(#2b2b2b,#2b2b2b);
     flex-direction: column;
     background-position: center;
   }
@@ -197,7 +201,7 @@ nav ul li a.anitext:hover{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: url(img/faiths1_The_Titanic_crashing_on_a_lighthouse_in_the_Atlantic_Oc_24099558-3f56-48ea-90a1-b2816c09d760.png);
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/faiths1_The_Titanic_crashing_on_a_lighthouse_in_the_Atlantic_Oc_24099558-3f56-48ea-90a1-b2816c09d760.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -216,13 +220,25 @@ nav ul li a.anitext:hover{
   margin-left: 30px;
   -webkit-text-decoration-line: underline; 
   text-decoration-line: underline; 
+  font-weight: 600;
+  line-height: 1em;
+
 
 }
+
+.page3-paragraph{
+  color: black;
+font-size: 20px;
+margin-left: 30px;
+}
+
 .page3-titlebox{
   width: 32rem;
-  background: linear-gradient(to right, #151515, rgba(255, 255, 255, 0));
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  background-color:rgba(255,255,255,0.2);
+  border-radius:1rem;
+  backdrop-filter:blur(1.2rem);
+  margin-left: 1.5rem;
+  border: 4px solid #252525;
 }
 .page3-about{
   color:#fff;
@@ -266,22 +282,22 @@ nav ul li a.anitext:hover{
 .card1{
   background-color:rgba(255,255,255,0.1);
   border-radius:1rem;
-  backdrop-filter:blur(1.2rem);
+  backdrop-filter:blur(1.1rem);
 }
 .card2{
   background-color:rgba(255,255,255,0.1);
   border-radius:1rem;
-  backdrop-filter:blur(1.2rem);
+  backdrop-filter:blur(1.1rem);
 }
 .card3{
   background-color:rgba(255,255,255,0.1);
   border-radius:1rem;
-  backdrop-filter:blur(1.2rem);
+  backdrop-filter:blur(1.1rem);
 }
 .card4{
   background-color:rgba(255,255,255,0.1);
   border-radius:1rem;
-  backdrop-filter:blur(1.2rem);
+  backdrop-filter:blur(1.1rem);
 }
 
 .card:hover{
@@ -299,18 +315,99 @@ nav ul li a.anitext:hover{
   font-size: 0.75rem;
 }
 
-/**/
-.quarters1{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: url(img/rain-droplets.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+/*OurTeam*/
+
+.section-team {
+	font-family: "Poppins", sans-serif;
+	padding: 80px 0;
+  background: linear-gradient(#3a3a3a,#3a3a3a);
+}
+
+.section-team .header-section {
+	margin-bottom: 50px;
+}
+
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+	font-size: 28px;
+    font-weight: 500;
+    color: #3e64ff;
+}
+
+.section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.title{
+  color: #fff;
+}
+
+.section-team .single-person {
+	margin-top: 30px;
+	padding: 30px;
+	background-color: #f6f9ff;
+	border-radius: 5px;
+}
+
+.section-team .single-person:hover {
+	background: linear-gradient(to right, #016cec, #00b5f7);
+}
+
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+}
+
+.section-team .single-person:hover .person-image {
+	padding: 12px;
+    border: 4px dashed #fff;
+}
+
+.section-team .single-person .person-image img {
+	width: 100%;
+    border-radius: 50%;
+}
+
+.section-team .single-person .person-image .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #016cec, #00b5f7);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.section-team .single-person:hover .person-image .icon {
+	background: none;
+	background-color: #fff;
+	color: #016cec;
+}
+
+.section-team .single-person .person-info .full-name {
+	margin-bottom: 10px;
+	font-size: 28px;
+    font-weight: 700;
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #016cec;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+	color: #fff;
 }
 
 /*VIDEO!!!*/
@@ -363,14 +460,6 @@ nav ul li a.anitext:hover{
 {
   font-size: 5em;
   font-weight: 800;
-  color: #fff;
-  line-height: 1em;
-  text-transform: uppercase;
-}
-.text h3
-{
-  font-size: 4em;
-  font-weight: 700;
   color: #fff;
   line-height: 1em;
   text-transform: uppercase;
