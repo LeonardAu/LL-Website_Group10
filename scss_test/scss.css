@@ -1,0 +1,67 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  z-index: 9999;
+  transition: all 300ms ease-in-out;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scroll-down nav {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up nav {
+  filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+.menu-is-open {
+  overflow: hidden;
+}
+.menu-is-open nav {
+  filter: none;
+}
+
+body {
+  padding-bottom: 10000%;
+  background: url(/img/blueish-skies.jpg);
+}/*# sourceMappingURL=scss.css.map */
+
+
+nav h1{
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: default;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color:#fff;
+    padding: 0 20px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.anitext{
+ margin-right: 10px;
+
+}
+ul li a.anitext:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+  transition:color 0.5s;
+}
