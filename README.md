@@ -13,7 +13,10 @@
 ## Purpose:
 Portfolio for the whole School Year
 
-## Libraries/Frameworks Used:
+
+## Credits:
+
+### Libraries/Frameworks Used:
 
 - [JQuery](https://jquery.com/)
 - [Bootstrap 5](https://getbootstrap.com/)
@@ -21,6 +24,11 @@ Portfolio for the whole School Year
 - [Smooth Scrollbar](https://github.com/idiotWu/smooth-scrollbar)
 - [Ukiyo.js](https://github.com/yitengjun/ukiyo-js)
 
-## Images Used From:
-- [Midjourney](https://www.midjourney.com/)
+### Images Used From:
+- [Midjourney AI](https://www.midjourney.com/)
 - [Unsplash](https://unsplash.com/)
+
+### Others:
+- [Codepen (For Templates and Solutions)](https://codepen.io/)
+- [Stack Overflow (For Solutions)](https://stackoverflow.com/)
+- etc...
