@@ -13,10 +13,14 @@
 # Purpose:
 Portfolio for the whole School Year
 
-# Libraries/Frameworks Used:
+## Libraries/Frameworks Used:
 
 - https://jquery.com/
 - https://getbootstrap.com/
 - https://fontawesome.com/
 - https://github.com/idiotWu/smooth-scrollbar
 - https://github.com/yitengjun/ukiyo-js
+
+##Images From:
+- Midjourney
+- Unsplash
