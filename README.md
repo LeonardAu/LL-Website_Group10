@@ -16,3 +16,7 @@ Portfolio for the whole School Year
 # Libraries/Frameworks/Plugins Used:
 
 - https://jquery.com/
+- https://getbootstrap.com/
+- https://fontawesome.com/
+- https://github.com/idiotWu/smooth-scrollbar
+- https://github.com/yitengjun/ukiyo-js
