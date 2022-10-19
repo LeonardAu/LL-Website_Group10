@@ -13,7 +13,7 @@
 # Purpose:
 Portfolio for the whole School Year
 
-# Libraries/Frameworks/Plugins Used:
+# Libraries/Frameworks Used:
 
 - https://jquery.com/
 - https://getbootstrap.com/
