@@ -10,17 +10,17 @@
  #### Website: https://leonardau.github.io/LL-Website_Group10/
 
 
-# Purpose:
+## Purpose:
 Portfolio for the whole School Year
 
 ## Libraries/Frameworks Used:
 
-- https://jquery.com/
-- https://getbootstrap.com/
-- https://fontawesome.com/
-- https://github.com/idiotWu/smooth-scrollbar
-- https://github.com/yitengjun/ukiyo-js
+- [JQuery](https://jquery.com/)
+- [Bootstrap 5](https://getbootstrap.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Smooth Scrollbar](https://github.com/idiotWu/smooth-scrollbar)
+- [Ukiyo.js](https://github.com/yitengjun/ukiyo-js)
 
-## Images From:
-- Midjourney
-- Unsplash
+## Images Used From:
+- [Midjourney](https://www.midjourney.com/)
+- [Unsplash](https://unsplash.com/)
