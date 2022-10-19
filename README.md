@@ -21,6 +21,6 @@ Portfolio for the whole School Year
 - https://github.com/idiotWu/smooth-scrollbar
 - https://github.com/yitengjun/ukiyo-js
 
-##Images From:
+## Images From:
 - Midjourney
 - Unsplash
