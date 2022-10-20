@@ -201,7 +201,7 @@ nav ul li a.anitext:hover{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/faiths1_The_Titanic_crashing_on_a_lighthouse_in_the_Atlantic_Oc_24099558-3f56-48ea-90a1-b2816c09d760.png);
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/midjourney_tower.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -212,7 +212,8 @@ nav ul li a.anitext:hover{
   align-items: center;
 }
 .col-page3{
-  flex-basis: 50%;
+  flex-basis: 100%;
+  margin-bottom: 4rem;
 }
 .page3-title{
   color: #fff;
@@ -244,7 +245,7 @@ margin-left: 30px;
   line-height: 15px;
 }
 .page3btn{
-    padding: 10px 35px;
+    padding: 10px 25px;
     text-decoration: none !important;
     background-color: black;
     border: 1px solid red;
@@ -266,7 +267,7 @@ margin-left: 30px;
 }
 .card{
   width: 20rem;
-  height: 25rem;
+  height: fit-content; /*HEIGHT IS ORIGINALLY 25rem*/
   display: inline-block;
   border-radius: 10px;
   padding: 15px 25px;
@@ -469,6 +470,17 @@ margin-left: 30px;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+  background: linear-gradient(#111, #222);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.text h4 {
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 600;
+  max-width: 700px;
+  -webkit-text-decoration-line: underline; 
+  text-decoration-line: underline; 
 }
 .text button
 {
@@ -507,32 +519,8 @@ margin-left: 30px;
 }
 
 
-/*Footer*/
 
 
 
 
-
-
-
-  /*    
-  section{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-position: center;
-    align-items: center;
-  }
-  */
-
-  /*
-  display: flex; 
-  justify-content: center; 
-  align items: center; 
-  min-height: 100vh, 
-  width: 100%;
- */
 
