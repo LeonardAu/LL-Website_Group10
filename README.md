@@ -11,7 +11,7 @@
 
 
 ## Purpose:
-Portfolio for the whole School Year
+Project for LifeLabs
 
 
 ## Credits:
