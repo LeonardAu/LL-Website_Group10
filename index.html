@@ -33,7 +33,7 @@
       <div class="page" id="parallaxfx">
         <div class="main">
           <h1 class="headings headtypedjs"></h1>
-          <a href="#aboutus" class="home-btn">Begin</a>
+          <a href="#aboutus" class="home-btn buttontypedjs"></a>
         </div>
       </div>
       <!--ABOUT US-->
@@ -352,19 +352,22 @@ method of content, rather than the content itself. <br>
     <script>
       var typed = new Typed(".headtypedjs", {
         strings: [
-          "Hello World!",
           "Welcome to our website!",
-          "How's your day?",
-          "Hi there... :)",
-          "This is Group 10!",
-          "Quarter 1 is available!",
-          "Whats up?",
         ],
         showCursor: false,
         typeSpeed: 160,
         backSpeed: 100,
         loop: true,
-        shuffle: true,
+        fadeOut: true,
+      });
+       var typed = new Typed(".buttontypedjs", {
+        strings: [
+          "Begin",
+        ],
+        showCursor: false,
+        typeSpeed: 160,
+        backSpeed: 100,
+        loop: true,
         fadeOut: true,
       });
     </script>
