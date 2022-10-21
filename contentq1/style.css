@@ -1,0 +1,733 @@
+:root {
+    --background: #0d1011;
+    --keyboard-h: 7.5em;
+    --keyboard-w: 22.8em;
+    --board-h: auto;
+    --board-w: 100%;
+    --border: #405054;
+    --color: #95e9fe;
+    --curve: .5em;
+    --txt: #a0b3b8;
+    --key: 2em;  
+  }
+  
+  .holywrapper {
+    background-color: var(--background);
+    overflow-x: hidden;
+    padding: 1em 3em 1em 3em;
+    margin: 0;
+  }
+  
+  * {
+    font: 16pt 'system-ui',Montserrat,Tahoma;
+    color: var(--txt);
+  }
+  
+  h1 {
+    user-select: none;
+  }
+  
+  hr {
+    border-color: #425558;
+  }
+  
+  span {
+    font-weight: 100;
+    font-size: 30pt;
+    color: #addae6;
+  }
+  
+  p {
+    font: 12.3pt 'monospace', Verdana;
+  }
+  
+  .header {
+    background-color: none;
+    letter-spacing: -.1em;
+    user-select: none;
+    text-align: right;
+    height: 1em;
+    width: 100%;
+    color: var(--txt);
+    font: 9pt 'Verdana', Ink Free;
+    
+  }
+  .uselessbutton{
+    text-decoration: none !important;
+    transition: 1s;
+    color: #fff;
+  }
+
+  .uselessbutton:hover{
+    font-size: 25px;
+    color: red;
+  }
+  
+  .footer {
+    border-bottom-right-radius: .5em;
+    border-top-left-radius: .5em;
+    background-color: #748f96;
+    letter-spacing: .3em;
+    user-select: none;
+    text-align: center;
+    position: relative;
+    padding: 0em .4em .4em .4em;
+    height: 1em;
+    margin: auto;
+    width: 95%;
+    color: var(--background);
+    font: 20pt Old English Text MT, Vivaldi, 'Ink Free';
+  }
+  
+  .center {
+    align-items: center;
+    padding: 1em 0 1em 0;
+    display: flex;
+    height: auto;
+  }
+  
+  .keyboard {
+    background-color: none;
+    border-radius: var(--curve);
+    border-bottom: 1px solid var(--color);
+    border-right: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--color);
+    position: relative;
+    padding: 1em 1em 2em 1em;
+    display: inline-block;
+    margin: auto;
+    height: var(--keyboard-h);
+    width: var(--keyboard-w);
+  }
+  
+  #q {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(0, 0);
+  }
+  
+  #w {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(2.3em, 0);
+  }
+  
+  #e {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(4.6em, 0);
+  }
+  
+  #r {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(6.9em, 0);
+  }
+  
+  #t {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(9.2em, 0);
+  }
+  
+  #y {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(11.5em, 0);
+  }
+  
+  #u {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(13.8em, 0);
+  }
+  
+  #i {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(16.1em, 0);
+  }
+  
+  #o {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(18.4em, 0);
+  }
+  
+  #p {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(20.7em, 0);
+  }
+  
+  #a {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(.5em, 2.3em);
+  }
+  
+  #s {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(2.8em, 2.3em);
+  }
+  
+  #d {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(5.1em, 2.3em);
+  }
+  
+  #f {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(7.4em, 2.3em);
+  }
+  
+  #g {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(9.7em, 2.3em);
+  }
+  
+  #h {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(12em, 2.3em);
+  }
+  
+  #j {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(14.25em, 2.3em);
+  }
+  
+  #k {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(16.5em, 2.3em);
+  }
+  
+  #l {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(18.75em, 2.3em);
+  }
+  
+  #z {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(1.6em, 4.6em);
+  }
+  
+  #x {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(3.9em, 4.6em);
+  }
+  
+  #c {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(6.2em, 4.6em);
+  }
+  
+  #v {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(8.5em, 4.6em);
+  }
+  
+  #b {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(10.8em, 4.6em);
+  }
+  
+  #n {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(13.1em, 4.6em);
+  }
+  
+  #m {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform:translate(15.4em, 4.6em);
+  }
+  
+  #space {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: 14em;
+    position: absolute;
+    transform:translate(4.5em, 6.9em);
+  }
+  
+  /*************************************/
+  
+  #q1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(0, 0);
+  }
+  
+  #w1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(2.3em, 0);
+  }
+  
+  #e1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(4.6em, 0);
+  }
+  
+  #r1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(6.9em, 0);
+  }
+  
+  #t1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(9.2em, 0);
+  }
+  
+  #y1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(11.5em, 0);
+  }
+  
+  #u1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(13.8em, 0);
+  }
+  
+  #i1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(16.1em, 0);
+  }
+  
+  #o1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(18.4em, 0);
+  }
+  
+  #p1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(20.7em, 0);
+  }
+  
+  #a1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(0em, 2.3em);
+  }
+  
+  #s1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(2.3em, 2.3em);
+  }
+  
+  #d1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(4.6em, 2.3em);
+  }
+  
+  #f1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(6.9em, 2.3em);
+  }
+  
+  #g1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(9.2em, 2.3em);
+  }
+  
+  #h1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(11.5em, 2.3em);
+  }
+  
+  #j1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(13.8em, 2.3em);
+  }
+  
+  #k1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(16.1em, 2.3em);
+  }
+  
+  #l1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(18.4em, 2.3em);
+  }
+  
+  #z1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(2.3em, 4.6em);
+  }
+  
+  #x1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(4.6em, 4.6em);
+  }
+  
+  #c1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(6.9em, 4.6em);
+  }
+  
+  #v1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(9.2em, 4.6em);
+  }
+  
+  #b1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(11.5em, 4.6em);
+  }
+  
+  #n1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform: translate(13.8em, 4.6em);
+  }
+  
+  #m1 {
+    background-color: none;
+    border-radius: var(--curve);
+    border: 0.01em solid var(--color);
+    height: var(--key);
+    width: var(--key);
+    position: absolute;
+    transform:translate(16.1em, 4.6em);
+  }
+
+  /**/
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  .gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+  } 
+
+  .card img{
+    height: 175px;
+    width: 275px;
+    border-radius: 7px;
+  }
+  .card{
+    width: 20rem;
+    height: fit-content; /*HEIGHT IS ORIGINALLY 25rem*/
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+  }
+  .card1{
+    background-color:rgba(255,255,255,0.1);
+    border-radius:1rem;
+    backdrop-filter:blur(1.1rem);
+  }
+  .card2{
+    background-color:rgba(255,255,255,0.1);
+    border-radius:1rem;
+    backdrop-filter:blur(1.1rem);
+  }
+  .card3{
+    background-color:rgba(255,255,255,0.1);
+    border-radius:1rem;
+    backdrop-filter:blur(1.1rem);
+  }
+  .card4{
+    background-color:rgba(255,255,255,0.1);
+    border-radius:1rem;
+    backdrop-filter:blur(1.1rem);
+  }
+  
+  .card:hover{
+    transform: translateY(-10px);
+  }
+  .page3-cardtitle{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    font-size: 1.75rem;
+    -webkit-text-decoration-line: overline; 
+    text-decoration-line: overline; 
+  }
+  .card p{
+    text-shadow: 0 0 15px #000;
+    font-size: 0.75rem;
+  }
+
+  .row22{
+    display: flex;
+    height: 88%;
+    align-items: center;
+  }
+  .col22{
+    flex-basis: 100%;
+    margin-bottom: 4rem;
+  }
+  .col22 h1{
+    color: white;
+    text-shadow: 0 0 5px #999;
+    font-size: 2.75rem;
+    margin-left: 20px;
+  }
+  
+  .pra2 h5 {
+    color: white;
+  }
+  .pra2 p{
+    color: white;
+  }
+
+  .containermain{
+    width: 100%;
+
+  }
+
+  .lastparagraph{
+font-size: 0.9rem;
+  }
