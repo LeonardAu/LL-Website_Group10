@@ -1,13 +1,13 @@
 -------
-**This website has been migrated.** <br>
+__This website has been migrated.__ <br>
 Link: https://ll-website-group10.netlify.app/
 -----
 
 
--------
-# OLD WEBSITE;
+
+# LL-Website_Group10
  
-#### Website: https://leonardau.github.io/LL-Website_Group10/
+#### Website: https://leonardau.github.io/LL-Website_Group10/ (OLD)
 
 
 ## Credits:
@@ -28,4 +28,4 @@ Link: https://ll-website-group10.netlify.app/
 - [Codepen (For Templates and Solutions)](https://codepen.io/)
 - [Stack Overflow (For Solutions)](https://stackoverflow.com/)
 - etc...
------
+
