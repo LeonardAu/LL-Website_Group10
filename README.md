@@ -1,6 +1,6 @@
 
 > ### This website has been migrated. <br>
-Link: https://ll-website-group10.netlify.app/
+Link: https://thewonderingminds.netlify.app/
 
 
 
